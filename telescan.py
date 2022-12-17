@@ -13,13 +13,14 @@ app = Client(
 
 init(autoreset=True)
 print(Fore.CYAN + """
-████████╗███████╗██╗     ███████╗███████╗ ██████╗ █████╗ ███╗   ██╗
+█████████╗███████╗██╗     ███████╗███████╗ ██████╗ █████╗ ███╗   ██╗
 ╚══██╔══╝██╔════╝██║     ██╔════╝██╔════╝██╔════╝██╔══██╗████╗  ██║
    ██║   █████╗  ██║     █████╗  ███████╗██║     ███████║██╔██╗ ██║
    ██║   ██╔══╝  ██║     ██╔══╝  ╚════██║██║     ██╔══██║██║╚██╗██║
    ██║   ███████╗███████╗███████╗███████║╚██████╗██║  ██║██║ ╚████║
    ╚═╝   ╚══════╝╚══════╝╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝
---- v1.0 by @Pielco11 ---
+                                                                   
+--- v1.0 by ---
 """)
 
 def userID(userInput):
@@ -54,8 +55,6 @@ def singleUserLookup(user):
         _lod = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(_lod))
     print("------\n|-> ID: {}\n|-> Contact: {}\n|-> Full name: {}\n|-> Username: {}\n|-> Phone: {}".format(_id, _contact, _fullName, _username, _phone))
     print("|-> DC: {}\n|-> Last Online Date: {}".format(_dc, _lod))
-
-
 
 def chatMembersInfoPrint(data, total=True):
     if total:
